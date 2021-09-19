@@ -1,0 +1,17 @@
+.tituloprincipal{
+    display: block;
+    /*margin: auto;*/
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 25%;
+    border: 5px solid #000;
+    border-radius: 35px;
+    color: blue;
+    background-color: darkgray;    
+}
+
+body{
+    background-color: #004;
+
+}
