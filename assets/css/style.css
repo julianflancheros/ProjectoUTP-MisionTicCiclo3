@@ -147,6 +147,7 @@ a:focus {
      object-position: right top;
 }
 
+/* Header inicio */
 .seccion__header {
   padding: 15px 0;
   background-color: var(--principalColor);
@@ -1319,148 +1320,148 @@ footer p a:focus:hover {
   color: var(--principalColor);
 }
 
-@media (max-width: 768px) {
-  .container {
-      overflow: hidden;
+  @media (max-width: 768px) {
+    .container {
+        overflow: hidden;
+    }
+
+    section#formHolder {
+        padding: 0;
+    }
+
+    section#formHolder div.brand {
+        min-height: 200px !important;
+    }
+
+    section#formHolder div.brand.active {
+        min-height: 100vh !important;
+    }
+
+    section#formHolder div.brand .heading.active {
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section#formHolder div.brand .success-msg p {
+        font-size: 16px;
+    }
+
+    section#formHolder div.brand .success-msg a {
+        padding: 5px 30px;
+        font-size: 10px;
+    }
+
+    section#formHolder .form {
+        width: 80vw;
+        min-height: 500px;
+        margin-left: 10vw;
+    }
+
+    section#formHolder .form .form-peice {
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        transition: all 0.5s ease-in-out;
+    }
+
+    section#formHolder .form .form-peice.switched {
+        transform: translateY(-100%);
+        width: 100%;
+        left: 0;
+    }
+
+    section#formHolder .form .form-peice>form {
+        width: 100% !important;
+        padding: 60px;
+        left: 50%;
+    }
   }
 
-  section#formHolder {
-      padding: 0;
+  @media screen and (min-width: 450px) {
+    section#formHolder .form {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 50px !important;
+    }
   }
 
-  section#formHolder div.brand {
-      min-height: 200px !important;
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 
-  section#formHolder div.brand.active {
-      min-height: 100vh !important;
+  @keyframes myanimation {
+    0% {
+        background-color: #670d05;
+    }
+
+    14% {
+        background-color: #ca1f03;
+    }
+
+    28% {
+        background-color: #de7607;
+    }
+
+    42% {
+        background-color: #ffab2e;
+    }
+
+    56% {
+        background-color: #9d9a27;
+    }
+
+    70% {
+        background-color: #495d18;
+    }
+
+    84% {
+        background-color: #1c2c05;
+    }
+
+    100% {
+        background-color: #670d05;
+    }
   }
 
-  section#formHolder div.brand .heading.active {
-      top: 200px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+  @keyframes myanimations {
+    0% {
+        color: #670d05;
+    }
 
-  section#formHolder div.brand .success-msg p {
-      font-size: 16px;
-  }
+    14% {
+        color: #ca1f03;
+    }
 
-  section#formHolder div.brand .success-msg a {
-      padding: 5px 30px;
-      font-size: 10px;
-  }
+    28% {
+        color: #de7607;
+    }
 
-  section#formHolder .form {
-      width: 80vw;
-      min-height: 500px;
-      margin-left: 10vw;
-  }
+    42% {
+        color: #ffab2e;
+    }
 
-  section#formHolder .form .form-peice {
-      margin: 0;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      transition: all 0.5s ease-in-out;
-  }
+    56% {
+        color: #9d9a27;
+    }
 
-  section#formHolder .form .form-peice.switched {
-      transform: translateY(-100%);
-      width: 100%;
-      left: 0;
-  }
+    70% {
+        color: #495d18;
+    }
 
-  section#formHolder .form .form-peice>form {
-      width: 100% !important;
-      padding: 60px;
-      left: 50%;
-  }
-}
+    84% {
+        color: #1c2c05;
+    }
 
-@media screen and (min-width: 450px) {
-  section#formHolder .form {
-      width: 100vw;
-      margin-left: 0;
+    100% {
+        color: #670d05;
+    }
   }
-
-  h2 {
-      font-size: 50px !important;
-  }
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-@keyframes myanimation {
-  0% {
-      background-color: #670d05;
-  }
-
-  14% {
-      background-color: #ca1f03;
-  }
-
-  28% {
-      background-color: #de7607;
-  }
-
-  42% {
-      background-color: #ffab2e;
-  }
-
-  56% {
-      background-color: #9d9a27;
-  }
-
-  70% {
-      background-color: #495d18;
-  }
-
-  84% {
-      background-color: #1c2c05;
-  }
-
-  100% {
-      background-color: #670d05;
-  }
-}
-
-@keyframes myanimations {
-  0% {
-      color: #670d05;
-  }
-
-  14% {
-      color: #ca1f03;
-  }
-
-  28% {
-      color: #de7607;
-  }
-
-  42% {
-      color: #ffab2e;
-  }
-
-  56% {
-      color: #9d9a27;
-  }
-
-  70% {
-      color: #495d18;
-  }
-
-  84% {
-      color: #1c2c05;
-  }
-
-  100% {
-      color: #670d05;
-  }
-}
