@@ -1,20 +1,19 @@
-# Software tienda de abarrotes 
-## Portafolio de la tienda y gestión de productos
-> Proyecto página web ciclo 3
+# front
 
-Este desarrollo esta pensado para una tienda de víveres (puede ser tanto de barrio como de plaza) y busca crear una inventario virtual mediante un aplicativo web capaz que permita a los usuarios revisar que productos están actualmente en el lugar y que productos no (Útil para pedir que los vendedores sepan que surtir de acuerdo a las compras de sus usuarios), permitirá ver que productos están disponibles ocultando todo aquel que no lo este, además dará descuentos automáticos si el producto tiene algún defecto o existe mucho stock, además, permitirá al usuario ver algunas noticias bajo el contexto del negocio (tanto del negocio como del tema de alimentos).
+## Project setup
+```
+npm install
+```
 
-> La metodología que se llevará a cabo será SCRUM, para lo cual se tienen los siguientes participantes.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### SCRUM Master
-Julian Lancheros
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### Product Owner
-Henry Cogua
-
-### Equipo SCRUM
-- Harbey Cely
-- Carlos Suarez	
-- David Suarez	
-- Henry Cogua
-- Julian Lancheros
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
