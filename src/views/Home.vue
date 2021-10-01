@@ -5,7 +5,7 @@
       </div>
     <img alt="Vue logo" src="../assets/images/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Ofertas />
+    <OfertasDiarias />
     <Footer />
   </div>
 </template>
@@ -15,11 +15,11 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import Ofertas from '@/components/Ofertas.vue'
+import OfertasDiarias from '@/components/OfertasDiarias.vue'
 
 export default {
   components: {
-    HelloWorld, Header, Footer, Ofertas
+    HelloWorld, Header, Footer, OfertasDiarias
   }
 }
 </script>

@@ -20,6 +20,9 @@
                           <li class="nav-item">
                             <router-link to="/Equipo" class="nav-link">Equipo</router-link>
                           </li>
+                          <li class="nav-item">
+                            <router-link to="/CRUD" class="nav-link">CRUD</router-link>
+                          </li>
                         </ul>
 
                         <div class="user_option">

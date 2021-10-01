@@ -12,6 +12,7 @@
                         </div>
 
                         <div class="row">
+                            <!-- <li v-for="item in servicios">{{item}}</li> -->
                             <div class="col-md-6">
                                 <div class="box ">
                                     <div class="img-box">
@@ -101,8 +102,8 @@
 
 <script>
     export default{
-        name: 'Ofertas'
-    }
+        name: 'OfertasDiarias'
+    };
 </script>
 
 <style>

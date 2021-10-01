@@ -4,7 +4,7 @@
         <Header />
       </div>
     <h1>Page list</h1>
-    <Ofertas />
+    <OfertasDiarias />
     <!-- <hello-world-test msg="Red"/> -->
     <Footer/>
   </div>
@@ -14,21 +14,13 @@
 import Header from '../components/Header.vue'
 // import Equipo from './components/Equipo.vue'
 import Footer from '../components/Footer.vue'
-import Ofertas from '../components/Ofertas.vue'
+import OfertasDiarias from '../components/OfertasDiarias.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   components:{
-    Header, Footer, Ofertas
+    Header, Footer, OfertasDiarias
     // Footer, HelloWorld, Header, Equipo
-  }, 
-  // mounted() {
-  //   let arrayJsItems = ['./assets/js/bootstrap.js', './assets/js/jquery-3.4.1.min.js',  './assets/js/custom.js']
-
-  //   let externalScript = document.createElement('script')
-  //   for (const item in arrayJsItems) {
-  //     externalScript.setAttribute('src', item);
-  //     document.head.appendChild(externalScript);
-  // } 
+  }
 }
 </script>
