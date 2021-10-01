@@ -3,7 +3,7 @@
     <div id="header">
         <Header />
       </div>
-    <h1>Page team</h1>
+    <!-- <h1>Page team</h1> -->
     <Equipo/>
     <!-- <hello-world-test msg="Red"/> -->
     <Footer/>
