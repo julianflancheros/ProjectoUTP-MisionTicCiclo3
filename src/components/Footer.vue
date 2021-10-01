@@ -43,19 +43,19 @@
                             </p>
                             <div class="footer_social">
                                 <a href="">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
                                 </a>
                                 <a href="">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
                                 </a>
                                 <a href="">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 </a>
                                 <a href="">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
                                 </a>
                                 <a href="">
-                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    <i class="fab fa-pinterest" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>

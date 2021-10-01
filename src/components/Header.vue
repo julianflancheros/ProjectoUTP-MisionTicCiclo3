@@ -4,7 +4,7 @@
         <header class="seccion__header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <router-link to="/" class="navbar-brand">Nombre del negocio aquí</router-link>
+                    <router-link to="/" class="navbar-brand"><span>Nombre del negocio aquí</span></router-link>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -24,8 +24,8 @@
 
                         <div class="user_option">
                             <router-link to="/Login" class="user_link">
-                            login
-                              <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            LOGIN
+                              <i class="fa fa-user" aria-hidden="true"></i>
                             </router-link>
                             <a href="" class="order_online">
                                 Reserva Ahora

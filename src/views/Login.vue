@@ -7,7 +7,11 @@
 
                     <!-- Brand Box -->
                     <div class="col-md-6 col-sm-12 brand">
-                        <a href="index.html" class="logo">logo aqui <span>.</span></a>
+                      <router-link to="/" class="logo">
+                            logo aqui <span>.</span>
+                              
+                            </router-link>
+                        <!-- <a href="index.html" class="logo">logo aqui <span>.</span></a> -->
 
                         <div class="heading">
                             <h2>Nombre aqui</h2>
