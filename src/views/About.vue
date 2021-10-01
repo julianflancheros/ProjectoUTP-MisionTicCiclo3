@@ -4,6 +4,7 @@
         <Header />
       </div>
     <h1>Page list</h1>
+    <Ofertas />
     <!-- <hello-world-test msg="Red"/> -->
     <Footer/>
   </div>
@@ -13,11 +14,12 @@
 import Header from '../components/Header.vue'
 // import Equipo from './components/Equipo.vue'
 import Footer from '../components/Footer.vue'
+import Ofertas from '../components/Ofertas.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   components:{
-    Header, Footer
+    Header, Footer, Ofertas
     // Footer, HelloWorld, Header, Equipo
   }, 
   // mounted() {
