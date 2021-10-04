@@ -5,7 +5,10 @@
 </template>-->
 
 <template>
+  <div>
+  <Header />
   <div class="container">
+    
     <h1>Notas</h1>
     <b-alert
       :show="dismissCountDown"
@@ -21,6 +24,7 @@
       <h3>Editar nota</h3>
       <input type="text" class="form-control my-2" placeholder="Nombre" v-model="notaEditar.nombre">
       <input type="text" class="form-control my-2" placeholder="Descripción" v-model="notaEditar.descripcion">
+      <input type="text" class="form-control my-2" placeholder="Estado" v-model="notaEditar.activo">
       <b-button class="btn-warning my-2 mx-2" type="submit">Editar</b-button>
       <b-button class="my-2" type="submit" @click="editar = false">Cancelar</b-button>
     </form>
@@ -29,6 +33,7 @@
       <h3>Agregar nueva nota</h3>
       <input type="text" class="form-control my-2" placeholder="Nombre" v-model="nota.nombre">
       <input type="text" class="form-control my-2" placeholder="Descripción" v-model="nota.descripcion">
+      <input type="text" class="form-control my-2" placeholder="Estado" v-model="notaEditar.activo">
       <b-button class="btn-success my-2 btn-block" type="submit">Agregar</b-button>
     </form>
 
@@ -60,11 +65,20 @@
         </tr>
       </tbody>
     </table>
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+// import Footer from '../components/Footer.vue'
+
 export default {
+  components:{
+    Header, Footer
+  },
   data() {
     return {
       notas: [],

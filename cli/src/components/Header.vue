@@ -30,9 +30,9 @@
                             LOGIN
                               <i class="fa fa-user" aria-hidden="true"></i>
                             </router-link>
-                            <a href="" class="order_online">
+                            <!-- <a href="" class="order_online">
                                 Reserva Ahora
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </nav>

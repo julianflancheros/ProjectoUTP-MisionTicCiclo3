@@ -99,7 +99,45 @@
 
 <script>
 export default {
-    
+  data() {
+    return {
+      notas: [],
+      dismissSecs: 5,
+      dismissCountDown: 0,
+      mensaje: {color: '', texto: ''},
+      nota: {nombre: '', descripcion: ''},
+      editar: false,
+      notaEditar: {}
+    }
+  },
+  created(){
+    this.listarNotas();
+  },
+  methods: {
+    agregarNota(){
+      // console.log(this.nota);
+      this.axios.post('/nueva-nota', this.nota)
+        .then(res => {
+          this.notas.push(res.data)
+          this.nota.nombre = '';
+          this.nota.descripcion = '';
+          //Limpieza de los campos
+          this.mensaje.color = 'success';
+          this.mensaje.texto = 'Nota Agregada!';
+          this.showAlert()
+        })
+        .catch(e => {
+          console.log(e.response);
+          if(e.response.data.error.errors.nombre.message){
+            this.mensaje.texto = e.response.data.error.errors.nombre.message
+          }else{
+            this.mensaje.texto = 'Error de sistema';
+          }
+          this.mensaje.color = 'danger';
+          this.showAlert()
+        })
+      }
+  },
     mounted () {
     // login page
     $(document).ready(function () {
