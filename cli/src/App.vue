@@ -161,4 +161,31 @@
     -o-object-position: right top;
     object-position: right top;
   }
+
+  
+.seccion__slider .detalles__caja h1 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.seccion__slider .detalles__caja p {
+  font-size: 14px;
+}
+
+.seccion__slider .detalles__caja a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: var(--principalColorYellow);
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 10px;
+}
+
+.detalles__caja a:hover {
+  background-color: #e69c00;
+}
 </style>
