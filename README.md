@@ -13,8 +13,5 @@ Julian Lancheros
 Henry Cogua
 
 ### Equipo SCRUM
-- Harbey Cely
-- Carlos Suarez	
-- David Suarez	
 - Henry Cogua
 - Julian Lancheros
