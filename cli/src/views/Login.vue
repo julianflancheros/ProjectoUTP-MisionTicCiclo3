@@ -1,17 +1,16 @@
-<template>
+<!--<template>
     <div class="login">
         <div class="container">
             <section id="formHolder">
 
                 <div class="row">
 
-                    <!-- Brand Box -->
+                    
                     <div class="col-md-6 col-sm-12 brand">
                       <router-link to="/" class="logo">
                             logo aqui <span>.</span>
                               
                             </router-link>
-                        <!-- <a href="index.html" class="logo">logo aqui <span>.</span></a> -->
 
                         <div class="heading">
                             <h2>Nombre aqui</h2>
@@ -25,10 +24,10 @@
                     </div>
 
 
-                    <!-- Form Box -->
+                    
                     <div class="col-md-6 col-sm-12 form">
 
-                        <!-- Login Form -->
+
                         <div class="login form-peice switched">
                             <form class="login-form" action="#" method="post">
                                 <div class="form-group">
@@ -47,10 +46,8 @@
                                     <a href="forgot_password.html" class="forgotKey">¿Olvidaste tu contraseña?</a>
                                 </div>
                             </form>
-                        </div><!-- End Login Form -->
+                        </div>
 
-
-                        <!-- Signup Form -->
                         <div class="signup form-peice">
                             <form class="signup-form" action="#" method="post">
 
@@ -88,7 +85,7 @@
                                     <a href="#" class="switch">Ya estoy registrado</a>
                                 </div>
                             </form>
-                        </div><!-- End Signup Form -->
+                        </div>
                     </div>
                 </div>
 
@@ -714,4 +711,58 @@ footer p a:focus:hover {
         color: #670d05;
     }
   }
-</style>
+</style>-->
+
+<template>
+<div class="container">
+<h1>Login</h1>
+<form @submit.prevent="login">
+<input
+type="text"
+class="form-control my-2"
+placeholder="email"
+v-model="usuario.email"
+/>
+<input
+type="text"
+class="form-control my-2"
+placeholder="pass"
+v-model="usuario.pass"
+/>
+<b-button type="submit">Acceder</b-button>
+</form>
+<div v-if="mensaje !== ''">
+<p>{{mensaje}}</p>
+</div>
+</div>
+</template>
+<script>
+import { mapState, mapMutations, mapActions } from "vuex";
+import router from '../router';
+export default {
+data() {
+return {
+usuario: {email: 'prueba1@bluuweb.cl', pass: '123123'},
+mensaje: ''
+}
+},
+methods:{
+...mapMutations(['obtenerUsuario']),
+...mapActions(['guardarUsuario', 'leerToken',
+'cerrarSesion']),
+login(){
+this.axios.post('/login', this.usuario)
+.then(res => {
+// console.log(res.data.token);
+const token = res.data.token;
+// this.usuarioDB = res.data.usuarioDB
+this.guardarUsuario(token);
+})
+.catch(err => {
+console.log(err.response.data.mensaje);
+this.mensaje = err.response.data.mensaje;
+})
+}
+}
+}
+</script>
