@@ -3,7 +3,7 @@
     <div id="header">
         <Header />
       </div>
-    <img alt="Vue logo" src="../assets/images/logo.png">
+    <!-- <img alt="Vue logo" src="../assets/images/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <OfertasDiarias />
     <Equipo />
