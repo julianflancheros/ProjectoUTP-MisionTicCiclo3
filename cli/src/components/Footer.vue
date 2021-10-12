@@ -33,9 +33,7 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
-                            <a href="" class="footer-logo">
-                                AlistarFood
-                            </a>
+                            <router-link to="/" class="footer-logo"><span>AlistarFood</span></router-link>
                             <p>
                                 Reserva tus alimentos desde cualquier sitio del pais, reclama en la tienda con convenio mas cercana y sin intermediarios.
                                 <br>
@@ -90,7 +88,7 @@
     }
 </script>
 
-<style>
+<!--<style>
 /* footer section*/
 .footer_section {
   /* background-color: var(--principalColor); */
@@ -200,4 +198,4 @@
 .footer_section .footer-info p a {
   color: inherit;
 }
-</style>
+</style>-->

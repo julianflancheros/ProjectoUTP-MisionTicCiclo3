@@ -73,7 +73,7 @@
   }
 </script>
 
-<style>
+<!--<style>
   .about_section {
     background: var(--principalColor);
     color: #ffffff;
@@ -101,6 +101,8 @@
     max-width: 445px;
     position: relative;
     z-index: 2;
+    border-radius: 100%;
+    border: 10px solid var(--principalColorYellow);
   }
 
   .about_section .detalles__caja p {
@@ -146,4 +148,4 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-</style>
+</style>-->

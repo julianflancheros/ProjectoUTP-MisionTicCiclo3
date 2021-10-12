@@ -49,7 +49,7 @@ export default {
 }
 </script>
 
-<style>
+<!--<style>
 .seccion__header {
   padding: 15px 0;
   background-color: var(--principalColor);
@@ -224,4 +224,4 @@ export default {
 }
 
 /*end header section*/
-</style>
+</style>-->

@@ -16,14 +16,14 @@
                             <div class="col-md-6">
                                 <div class="box ">
                                     <div class="img-box">
-                                        <img src="../assets/images/v1.jpg" alt="">
+                                        <img src="../assets/images/OfertaLacteos.png" alt="">
                                     </div>
                                     <div class="detalles__caja">
                                         <h5>
-                                            Tasty Thursdays
+                                            Martes de lácteos
                                         </h5>
                                         <h6>
-                                            <span>20%</span> Off
+                                            <span>20%</span> Dcto
                                         </h6>
                                         <a href="">
                                             Order Now
@@ -35,14 +35,14 @@
                             <div class="col-md-6  ">
                                 <div class="box ">
                                     <div class="img-box">
-                                        <img src="assets/images/o2.jpg" alt="">
+                                        <img src="../assets/images/OfertaTuberculos.png" alt="">
                                     </div>
                                     <div class="detalles__caja">
                                         <h5>
-                                            Pizza Days
+                                            Miercoles de tuberculos
                                         </h5>
                                         <h6>
-                                            <span>15%</span> Off
+                                            <span>10%</span> Dcto
                                         </h6>
                                         <a href="">
                                             Order Now
@@ -54,14 +54,14 @@
                             <div class="col-md-6  ">
                                 <div class="box ">
                                     <div class="img-box">
-                                        <img src="assets/images/o2.jpg" alt="">
+                                        <img src="../assets/images/OfertaMercados.png" alt="">
                                     </div>
                                     <div class="detalles__caja">
                                         <h5>
-                                            Pizza Days
+                                            Domingos de mercados
                                         </h5>
                                         <h6>
-                                            <span>15%</span> Off
+                                            <span>35%</span> Dcto
                                         </h6>
                                         <a href="">
                                             Order Now
@@ -73,16 +73,16 @@
                             <div class="col-md-6  ">
                                 <div class="box ">
                                     <div class="img-box">
-                                        <img src="assets/images/o2.jpg" alt="">
+                                        <img src="../assets/images/OfertaCarnes.png" alt="">
                                     </div>
                                     <div class="detalles__caja">
                                         <h5>
-                                            Pizza Days
+                                            Viernes de carnes
                                         </h5>
                                         <h6>
-                                            <span>15%</span> Off
+                                            <span>15%</span> Dcto
                                         </h6>
-                                        <a href="">
+                                        <a href="" data-toggle="modal" data-target="#exampleModalLong">
                                             Order Now
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                         </a>
@@ -97,6 +97,27 @@
 
         <!-- end offer section -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Viernes de carnes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 </template>
 
@@ -106,6 +127,7 @@
     };
 </script>
 
+<!--
 <style>
     /* Ofertas sección */
 .offer_section {
@@ -144,6 +166,7 @@
   width: 100%;
   -webkit-transition: all .2s;
   transition: all .2s;
+
 }
 
 .offer_section .box .detalles__caja h5 {
@@ -189,4 +212,4 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-</style>
+</style>-->
