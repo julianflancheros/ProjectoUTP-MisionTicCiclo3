@@ -531,7 +531,7 @@ a:focus {
 }
 
 button.close {  
-  color: #fff;
+  color: var(--contrastColor);
 }
 
 button.close:hover {
@@ -1088,7 +1088,7 @@ section#formHolder {
   background: url(https://goo.gl/A0ynht);
   background-size: cover;
   background-position: center center;
-  color: #fff;
+  color: var(--contrastColor);
   min-height: 540px;
   position: relative;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -1114,18 +1114,19 @@ section#formHolder {
 
 .brand a.logo {
   color: var(--contrastColor);
-  font-size: 20px;
+  font-family: var(--titlesFont);
+  font-size: 35px;
   font-weight: 700;
   text-decoration: none;
   line-height: 1em;
 }
 
-.brand a.logo span {
+/* .brand a.logo span {
   font-size: 30px;
-  color: #fff;
+  color: var(--contrastColor);
   transform: translateX(-5px);
   display: inline-block;
-}
+} */
 
 .brand .heading {
   position: absolute;
@@ -1180,7 +1181,7 @@ section#formHolder {
   padding: 8px 30px;
   background: var(--principalColor);
   text-decoration: none;
-  color: #fff;
+  color: var(--contrastColor);
   border-radius: 30px;
 }
 
@@ -1202,7 +1203,7 @@ section#formHolder {
 }
 
 .form .form-peice {
-  background: #fff;
+  background: var(--contrastColor);
   min-height: 500px;
   margin-top: 20px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -1323,7 +1324,7 @@ section#formHolder {
   text-transform: uppercase;
   padding: 5px 30px;
   background: var(--principalColorYellow);
-  color: #fff;
+  color: var(--contrastColor);
   border-radius: 30px;
   margin-right: 20px;
   border: none;

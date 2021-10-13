@@ -6,5 +6,5 @@
 
 <!--Carga del css de la pagina-->
 <style scoped lang="css">
-  @import "./assets/css/style.css"; 
+  @import "./assets/css/style.css";
 </style>

@@ -27,10 +27,7 @@
                         </ul>
 
                         <div class="user_option">
-                            <router-link to="/Login" class="user_link">
-                            LOGIN
-                              <i class="fa fa-user" aria-hidden="true"></i>
-                            </router-link>
+                            <router-link to="/Login" class="user_link">LOGIN<i class="fa fa-user" aria-hidden="true"></i></router-link>
                             <!-- <a href="" class="order_online">
                                 Reserva Ahora
                             </a> -->
