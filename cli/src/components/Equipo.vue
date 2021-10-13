@@ -17,12 +17,7 @@
           </div>
           <div class="col-md-8 col-sm-12">
             <div class="detalles__caja">
-              <div class="heading_container">
-                <h2>
-                  Henry Jhovanny Cogua Mora
-                  <!--We Are Feane-->
-                </h2>
-              </div>
+              <h3>Henry Jhovanny Cogua Mora</h3>
               <p>
                 Saludos soy henry, tecnólogo en gestion en redes de datos del SENA, soy de la ciudad de Bogotá, estoy
                 motivado a terminar mi curso en MisionTIC 2022 , donde afianze mi pasion en el diseno grafico de paginas
@@ -38,11 +33,7 @@
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <div class="detalles__caja">
-              <div class="heading_container">
-                <h2>
-                  Julian Felipe Lancheros
-                </h2>
-              </div>
+              <h3>Julian Felipe Lancheros</h3>
               <p>
                 Soy estudiante de ingenieria agricola y ex-estudiante de ingenieria agronomica con muchas ganas de
                 adquirir nuevos conocimientos, me gusta aprender de forma autodidacta y aprovechar las oportunidades

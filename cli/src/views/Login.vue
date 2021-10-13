@@ -714,55 +714,53 @@ footer p a:focus:hover {
 </style>-->
 
 <template>
-<div class="container">
-<h1>Login</h1>
-<form @submit.prevent="login">
-<input
-type="text"
-class="form-control my-2"
-placeholder="email"
-v-model="usuario.email"
-/>
-<input
-type="text"
-class="form-control my-2"
-placeholder="pass"
-v-model="usuario.pass"
-/>
-<b-button type="submit">Acceder</b-button>
-</form>
-<div v-if="mensaje !== ''">
-<p>{{mensaje}}</p>
-</div>
-</div>
+  <div class="container">
+    <h1>Login</h1>
+    <form @submit.prevent="login">
+      <input type="text" class="form-control my-2" placeholder="email" v-model="usuario.email" />
+      <input type="text" class="form-control my-2" placeholder="pass" v-model="usuario.pass" />
+      <b-button type="submit">Acceder</b-button>
+    </form>
+    <div v-if="mensaje !== ''">
+      <p>{{mensaje}}</p>
+    </div>
+  </div>
 </template>
 <script>
-import { mapState, mapMutations, mapActions } from "vuex";
-import router from '../router';
-export default {
-data() {
-return {
-usuario: {email: 'prueba1@bluuweb.cl', pass: '123123'},
-mensaje: ''
-}
-},
-methods:{
-...mapMutations(['obtenerUsuario']),
-...mapActions(['guardarUsuario', 'leerToken',
-'cerrarSesion']),
-login(){
-this.axios.post('/login', this.usuario)
-.then(res => {
-// console.log(res.data.token);
-const token = res.data.token;
-// this.usuarioDB = res.data.usuarioDB
-this.guardarUsuario(token);
-})
-.catch(err => {
-console.log(err.response.data.mensaje);
-this.mensaje = err.response.data.mensaje;
-})
-}
-}
-}
+  import {
+    mapState,
+    mapMutations,
+    mapActions
+  } from "vuex";
+  import router from '../router';
+  export default {
+    data() {
+      return {
+        usuario: {
+          email: 'prueba1@bluuweb.cl',
+          pass: '123123'
+        },
+        mensaje: ''
+      }
+    },
+    methods: {
+      ...mapMutations(['obtenerUsuario']),
+      ...mapActions(['guardarUsuario', 'leerToken',
+        'cerrarSesion'
+      ]),
+      login() {
+        this.axios.post('/login', this.usuario)
+          .then(res => {
+            // console.log(res.data.token);
+            const token = res.data.token;
+            // this.usuarioDB = res.data.usuarioDB
+            this.guardarUsuario(token);
+          })
+          .catch(err => {
+            console.log(err.response.data.mensaje);
+            this.mensaje = err.response.data.mensaje;
+          })
+      }
+    }
+  }
 </script>

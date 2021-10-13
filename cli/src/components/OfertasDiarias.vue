@@ -7,13 +7,13 @@
                     <div class="container">
                         <div class="heading_container heading_center">
                             <h2>
-                                Ofertas del dia
+                                Ofertas de la semana
                             </h2>
                         </div>
 
                         <div class="row">
                             <!-- <li v-for="item in servicios">{{item}}</li> -->
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-12">
                                 <div class="box ">
                                     <div class="img-box">
                                         <img src="../assets/images/OfertaLacteos.png" alt="">
@@ -25,52 +25,34 @@
                                         <h6>
                                             <span>20%</span> Dcto
                                         </h6>
-                                        <a href="">
-                                            Order Now
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <a href="" data-toggle="modal" data-target="#martesModal">
+                                            Mas información
+                                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6  ">
+                            <div class="col-lg-6 col-12">
                                 <div class="box ">
                                     <div class="img-box">
                                         <img src="../assets/images/OfertaTuberculos.png" alt="">
                                     </div>
                                     <div class="detalles__caja">
                                         <h5>
-                                            Miercoles de tuberculos
+                                            Miercoles de tubérculos
                                         </h5>
                                         <h6>
                                             <span>10%</span> Dcto
                                         </h6>
-                                        <a href="">
-                                            Order Now
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <a href="" data-toggle="modal" data-target="#miercolesModal">
+                                            Mas información
+                                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6  ">
-                                <div class="box ">
-                                    <div class="img-box">
-                                        <img src="../assets/images/OfertaMercados.png" alt="">
-                                    </div>
-                                    <div class="detalles__caja">
-                                        <h5>
-                                            Domingos de mercados
-                                        </h5>
-                                        <h6>
-                                            <span>35%</span> Dcto
-                                        </h6>
-                                        <a href="">
-                                            Order Now
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6  ">
+
+                            <div class="col-lg-6  col-12">
                                 <div class="box ">
                                     <div class="img-box">
                                         <img src="../assets/images/OfertaCarnes.png" alt="">
@@ -82,13 +64,34 @@
                                         <h6>
                                             <span>15%</span> Dcto
                                         </h6>
-                                        <a href="" data-toggle="modal" data-target="#exampleModalLong">
-                                            Order Now
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <a href="" data-toggle="modal" data-target="#viernesModal">
+                                            Mas información
+                                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-lg-6  col-12">
+                                <div class="box ">
+                                    <div class="img-box">
+                                        <img src="../assets/images/OfertaMercados.png" alt="">
+                                    </div>
+                                    <div class="detalles__caja">
+                                        <h5>
+                                            Domingos de mercados
+                                        </h5>
+                                        <h6>
+                                            <span>35%</span> Dcto
+                                        </h6>
+                                        <a href="" data-toggle="modal" data-target="#domingoModal">
+                                            Mas información
+                                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -97,119 +100,170 @@
 
         <!-- end offer section -->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Viernes de carnes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Modal martes -->
+        <div class="offer_section modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" id="martesModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titulo" id="martesModalTitle">Martes de lácteos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <img src="../assets/images/ViernesImagen.png" alt="" style="width: 100%"> -->
+                        <img src="../assets/images/MartesImagen.png" alt="">
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" data-dismiss="modal">Cerrar</a>        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal miercoles -->
+        <div class="offer_section modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" id="miercolesModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titulo" id="miercolesModalTitle">Domingos de mercados</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <img src="../assets/images/ViernesImagen.png" alt="" style="width: 100%"> -->
+                        <img src="../assets/images/MiercolesImagen.png" alt="">
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" data-dismiss="modal">Cerrar</a>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal viernes -->
+        <div class="offer_section modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" id="viernesModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titulo" id="viernesModalTitle">Viernes de carnes</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <img src="../assets/images/ViernesImagen.png" alt="" style="width: 100%"> -->
+                        <img src="../assets/images/ViernesImagen.png" alt="">
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" data-dismiss="modal">Cerrar</a>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal domingos -->
+        <div class="offer_section modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true" id="domingoModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titulo" id="domingoModalTitle">Domingos de mercados</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <img src="../assets/images/ViernesImagen.png" alt="" style="width: 100%"> -->
+                        <img src="../assets/images/DomingoImagen.png" alt="">
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odio natus debitis, aliquid
+                            laboriosam cumque similique quasi error, labore ut laudantium sequi culpa quam perspiciatis
+                            voluptas! Eveniet consequatur sit at!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" data-dismiss="modal">Cerrar</a>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
 </template>
 
 <script>
-    export default{
+    export default {
         name: 'OfertasDiarias'
     };
 </script>
-
-<!--
-<style>
-    /* Ofertas sección */
-.offer_section {
-  position: relative;
-  padding-top: 45px;
-}
-
-.offer_section .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 45px;
-  border-radius: 5px;
-  padding: 20px 15px;
-  background-color: var(--principalColor);
-  color: #ffffff;
-}
-
-.offer_section .box .img-box {
-  width: 175px;
-  min-width: 175px;
-  height: 175px;
-  margin-right: 15px;
-  position: relative;
-  -webkit-transition: all 0.1 0.5s;
-  transition: all 0.1 0.5s;
-  border-radius: 100%;
-  border: 5px solid var(--principalColorYellow);
-  overflow: hidden;
-}
-
-.offer_section .box .img-box img {
-  width: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-
-}
-
-.offer_section .box .detalles__caja h5 {
-  font-family: var(--titlesFont);
-  font-size: 24px;
-  margin: 0;
-}
-
-.offer_section .box .detalles__caja h6 {
-  font-family: var(--titlesFont);
-  margin: 10px 0;
-}
-
-.offer_section .box .detalles__caja h6 span {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.offer_section .box .detalles__caja a {
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: var(--principalColorYellow);
-  color: #ffffff;
-  border-radius: 45px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-  text-decoration: none;
-}
-
-.offer_section .box .detalles__caja a:hover {
-  background-color: #e69c00;
-}
-
-.offer_section .box .detalles__caja a svg {
-  width: 20px;
-  height: auto;
-  margin-left: 5px;
-  fill: #ffffff;
-}
-
-.offer_section .box:hover .img-box img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-</style>-->

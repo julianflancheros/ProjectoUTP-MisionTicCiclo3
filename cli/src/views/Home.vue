@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <div id="header">
-        <Header />
-      </div>
+      <Header />
+    </div>
+    <IntroPage />
     <!-- <img alt="Vue logo" src="../assets/images/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <OfertasDiarias />
@@ -18,10 +19,11 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import OfertasDiarias from '@/components/OfertasDiarias.vue'
 import Equipo from '@/components/Equipo.vue'
+import IntroPage from '@/components/IntroPage.vue'
 
 export default {
   components: {
-    HelloWorld, Header, Footer, OfertasDiarias,Equipo
+    HelloWorld, Header, Footer, OfertasDiarias,Equipo, IntroPage
   }
 }
 </script>

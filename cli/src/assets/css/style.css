@@ -3,6 +3,7 @@
 :root{
   --principalColor: #670d05;
   --principalColorYellow: #ffab2e;
+  --contrastColor: #fff;
 
   --titlesFont: 'Courgette', cursive;
   --bodyFont: "Open Sans", sans-serif;
@@ -12,7 +13,7 @@
 body {
   font-family: var(--bodyFont);
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
 }
 
 .layout_padding {
@@ -165,7 +166,7 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   font-size: 32px;
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .custom_nav-container {
@@ -178,7 +179,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color: var(--contrastColor);
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -196,7 +197,7 @@ a:focus {
   height: auto;
   padding: 0;
   border: none;
-  color: #ffffff;
+  color: var(--contrastColor);
   margin: 0 10px;
 }
 
@@ -218,7 +219,7 @@ a:focus {
 }
 
 .user_option .user_link {
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .user_option .user_link:hover {
@@ -240,7 +241,7 @@ a:focus {
 .user_option .cart_link svg {
   width: 17px;
   height: auto;
-  fill: #ffffff;
+  fill: var(--contrastColor);
   margin-bottom: 2px;
 }
 
@@ -252,7 +253,7 @@ a:focus {
   display: inline-block;
   padding: 8px 30px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -279,7 +280,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -294,7 +295,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -349,7 +350,7 @@ a:focus {
 }
 
 .seccion__slider .detalles__caja {
-  color: #ffffff;
+  color: var(--contrastColor);
   margin-bottom: 145px;
   padding-top: 70px;
 }
@@ -357,7 +358,9 @@ a:focus {
 .seccion__slider .seccion__slider-imagen{
   display: block;
   margin: auto;
-  width: 75%;
+  width: 100%;
+  border-radius: 100%;
+  border: 10px solid var(--principalColorYellow);
 }
 
 
@@ -375,7 +378,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -403,7 +406,7 @@ a:focus {
 }
 
 .seccion__slider .carousel-indicators li {
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -433,7 +436,7 @@ a:focus {
   border-radius: 5px;
   padding: 20px 15px;
   background-color: var(--principalColor);
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .offer_section .box .img-box {
@@ -471,18 +474,20 @@ a:focus {
   font-weight: bold;
 }
 
-.offer_section .box .detalles__caja a {
+.offer_section .box .detalles__caja a, 
+.modal-footer a {
   display: inline-block;
   padding: 10px 30px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
 }
 
-.offer_section .box .detalles__caja a:hover {
+.offer_section .box .detalles__caja a:hover, 
+.modal-footer a:hover {
   background-color: #e69c00;
 }
 
@@ -490,7 +495,7 @@ a:focus {
   width: 20px;
   height: auto;
   margin-left: 5px;
-  fill: #ffffff;
+  fill: var(--contrastColor);
 }
 
 .offer_section .box:hover .img-box img {
@@ -498,6 +503,40 @@ a:focus {
           transform: scale(1.1);
 }
 
+.offer_section .modal-body img {
+  width: 100%;
+}
+
+.offer_section .modal-body p {
+  font-size: 3vh;
+  font-family: var(--bodyFont);
+  padding: 30px 15px 0px 15px;
+  color: var(--contrastColor);
+}
+
+.offer_section .modal-titulo {
+  font-size: 7vh;
+  color: var(--contrastColor);
+  font-family: var(--titlesFont);
+}
+
+.offer_section .modal-content {
+  background-color: var(--principalColor);
+  border: 5px solid var(--principalColorYellow);
+}
+
+.modal-header, .modal-footer {
+  border-bottom: 0px !important;
+  border-top: 0px !important;
+}
+
+button.close {  
+  color: #fff;
+}
+
+button.close:hover {
+  color: var(--principalColorYellow);
+}
 /* lista productos */
 
 .food_section .filters_menu {
@@ -522,15 +561,15 @@ a:focus {
 
 .food_section .filters_menu li.active {
   background-color: var(--principalColor);
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .food_section .box {
   position: relative;
   margin-top: 25px;
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 15px;
   overflow: hidden;
   background: linear-gradient(to bottom, #f1f2f3 25px, var(--principalColor) 25px);
@@ -604,7 +643,7 @@ a:focus {
 .food_section .box .options a svg {
   width: 18px;
   height: auto;
-  fill: #ffffff;
+  fill: var(--contrastColor);
 }
 
 .food_section .box:hover .img-box img {
@@ -626,7 +665,7 @@ a:focus {
   display: inline-block;
   padding: 10px 55px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -639,7 +678,7 @@ a:focus {
 
 .about_section {
   background: var(--principalColor);
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .about_section .row {
@@ -668,6 +707,11 @@ a:focus {
   border: 10px solid var(--principalColorYellow);
 }
 
+.about_section .detalles__caja h3 {
+  font-family: var(--titlesFont);
+  margin: 0;
+}
+
 .about_section .detalles__caja p {
   margin-top: 15px;
 }
@@ -676,7 +720,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -738,7 +782,7 @@ a:focus {
   display: inline-block;
   padding: 10px 55px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 45px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -815,7 +859,7 @@ a:focus {
 
 .client_section .box .detalles__caja {
   background-color: var(--principalColor);
-  color: #ffffff;
+  color: var(--contrastColor);
   padding: 25px 25px 15px 25px;
   border-radius: 5px;
 }
@@ -848,7 +892,7 @@ a:focus {
   width: 45px;
   height: 45px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   outline: none;
   bottom: 0px;
   font-size: 24px;
@@ -914,7 +958,7 @@ a:focus {
   display: inline-block;
   padding: 10px 55px;
   background-color: var(--principalColorYellow);
-  color: #ffffff;
+  color: var(--contrastColor);
   border-radius: 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -929,7 +973,7 @@ a:focus {
 .footer_section {
   /* background-color: var(--principalColor); */
   background-color: var(--principalColor);
-  color: #ffffff;
+  color: var(--contrastColor);
   padding: 75px 0 40px 0;
   text-align: center;
 }
@@ -965,7 +1009,7 @@ a:focus {
 
 .footer_section .footer_contact .contact_link_box a {
   margin: 5px 0;
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .footer_section .footer_contact .contact_link_box a i {
@@ -981,7 +1025,7 @@ a:focus {
   font-weight: bold;
   font-size: 38px;
   line-height: 1;
-  color: #ffffff;
+  color: var(--contrastColor);
 }
 
 .footer_section .footer_social {
@@ -1009,7 +1053,7 @@ a:focus {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: var(--contrastColor);
   border-radius: 100%;
   margin: 0 2.5px;
   font-size: 18px;
@@ -1025,7 +1069,7 @@ a:focus {
 }
 
 .footer_section .footer-info p {
-  color: #ffffff;
+  color: var(--contrastColor);
   margin: 0;
 }
 
@@ -1069,7 +1113,7 @@ section#formHolder {
 }
 
 .brand a.logo {
-  color: #ffffff;
+  color: var(--contrastColor);
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;

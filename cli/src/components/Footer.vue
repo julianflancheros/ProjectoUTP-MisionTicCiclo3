@@ -22,10 +22,10 @@
                                         3219167952
                                     </span>
                                 </a>
-                                <a href="mailto:contacto@AlistarFood.com">
+                                <a href="mailto:contacto@FoodPly.com">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <span>
-                                        contacto@AlistarFood.com
+                                        contacto@FoodPly.com
                                     </span>
                                 </a>
                             </div>
@@ -33,11 +33,11 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
-                            <router-link to="/" class="footer-logo"><span>AlistarFood</span></router-link>
+                            <router-link to="/" class="footer-logo"><span>FoodPly</span></router-link>
                             <p>
                                 Reserva tus alimentos desde cualquier sitio del pais, reclama en la tienda con convenio mas cercana y sin intermediarios.
                                 <br>
-                                AlistarFood tu compañia en la comida
+                                FoodPly tu compañia en la comida
                             </p>
                             <div class="footer_social">
                                 <a href="">
@@ -73,7 +73,7 @@
                 <div class="footer-info">
                     <p>
                         &copy; <span id="displayYear"></span> Todos los derechos reservados por
-                        <a href="#">AlistarFood</a>
+                        <a href="#">FoodPly</a>
                     </p>
                 </div>
             </div>
