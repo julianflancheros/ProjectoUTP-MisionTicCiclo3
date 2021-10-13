@@ -41,7 +41,26 @@ import OfertasDiarias from '../components/OfertasDiarias.vue'
 export default {
   components:{
     Header, Footer, OfertasDiarias
-
+  },
+  data() {
+    return {
+      notas: [],
+    }
+  },
+  created(){
+    this.listarNotas();
+  },
+  methods: {
+    listarNotas(){
+      this.axios.get('/nota')
+        .then(res => {
+          console.log(res.data);
+          this.notas = res.data;
+        })
+        .catch(e => {
+          console.log(e.response);
+        })
+    }
   }
 }
 </script>
