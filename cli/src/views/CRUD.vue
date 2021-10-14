@@ -52,7 +52,7 @@
             <b-button @click="eliminarNota(item._id)" 
               class="btn-danger btn-sm mx-2">Eliminar
             </b-button>
-            <b-button @click="activarEdicion(item._id)" 
+            <b-button @click="activarEdicionProducto(item._id)" 
               class="btn-warning btn-sm">Editar
             </b-button>
           </td>

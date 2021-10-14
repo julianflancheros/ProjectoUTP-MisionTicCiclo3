@@ -44,6 +44,7 @@ app.get('/', function (req, res) {
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+app.use('/producto', require('./routes/producto'));
 app.use('/users', require('./routes/users'));
 app.use('/login', require('./routes/login'));
 app.use('/nota', require('./routes/nota'));

@@ -20,9 +20,9 @@
               <li class="nav-item">
                 <router-link to="/Equipo" class="nav-link">Equipo</router-link>
               </li>
-              <li class="nav-item">
-                <!-- <router-link to="/CRUD" class="nav-link">CRUD</router-link> -->
-              </li>
+              <!-- <li class="nav-item">
+                <router-link to="/CRUD" class="nav-link">CRUD</router-link>
+              </li> -->
             </ul>
 
             <div class="user_option">
@@ -30,7 +30,7 @@
                 <!-- <b-link v-b-modal.modalLogin class="nav-link" v-if="!estaActivo">Iniciar sesion</b-link>
                 <b-link @click="cerrarSesion()" class="nav-link" v-if="estaActivo">Cerrar sesion</b-link> -->
                 
-                Login &nbsp; <i class="fa fa-user" aria-hidden="true"></i>
+                Log in &nbsp; <i class="fa fa-user" aria-hidden="true"></i>
 
 
               </router-link>

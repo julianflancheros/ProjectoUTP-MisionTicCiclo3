@@ -1,7 +1,7 @@
 <template>
     <div id="ofertas">
         <!-- offer section -->
-        <section class="offer_section layout_padding-bottom">
+        <section class="offer_section layout_padding2-bottom">
             <div class="offer_container">
                 <div class="container">
                     <div class="container">
