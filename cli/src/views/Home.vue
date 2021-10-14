@@ -23,7 +23,7 @@ import IntroPage from '@/components/IntroPage.vue'
 
 export default {
   components: {
-    HelloWorld, Header, Footer, OfertasDiarias,Equipo, IntroPage
+    HelloWorld, Header, Footer, OfertasDiarias, Equipo, IntroPage
   }
 }
 </script>

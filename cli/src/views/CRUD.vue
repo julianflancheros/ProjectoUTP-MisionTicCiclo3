@@ -105,7 +105,7 @@ export default {
     },
     agregarNota(){
       // console.log(this.nota);
-      this.axios.post('/nueva-nota', this.nota)
+      this.axios.post('/nota/nueva-nota', this.nota)
         .then(res => {
           this.notas.push(res.data)
           this.nota.nombre = '';

@@ -9,8 +9,8 @@ const app = express();
 
 // Conexión con la base de datos
 const mongoose = require('mongoose');
-// const uri = 'mongodb://localhost:27017/myapp';
-const uri = 'mongodb+srv://usu-master_00:L1VuvXTGXnNHueSc@projectoutp-misionticci.siojg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const uri = 'mongodb://localhost:27017/myapp2';
+// const uri = 'mongodb+srv://usu-master_00:L1VuvXTGXnNHueSc@projectoutp-misionticci.siojg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const options = {useNewUrlParser: true, useUnifiedTopology: true};
 
 // Or using promises
@@ -44,7 +44,9 @@ app.get('/', function (req, res) {
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
-app.use('/api', require('./routes/nota'));
+app.use('/users', require('./routes/users'));
+app.use('/login', require('./routes/login'));
+app.use('/nota', require('./routes/nota'));
 
 
 // Middleware para Vue.js router modo history
