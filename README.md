@@ -6,20 +6,14 @@ Este desarrollo esta pensado para una tienda de víveres (puede ser tanto de bar
 
 > La metodología que se llevará a cabo será SCRUM, para lo cual se tienen los siguientes participantes.
 
-### SCRUM Master
-Julian Lancheros
-
-### Product Owner
-Henry Cogua
-
-### Equipo SCRUM
+### Equipo de programación 
 - Henry Cogua
 - Julian Lancheros
 
-
-
 ### Enlace de la pagina montada
 https://app-foodply.herokuapp.com/About
+
+![https://github.com/julianflancheros](https://raw.githubusercontent.com/julianflancheros/julianflancheros/master/julianflancheros_github_profile.png)
 
 
 
