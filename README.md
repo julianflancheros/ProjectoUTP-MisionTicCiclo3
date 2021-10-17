@@ -10,10 +10,7 @@ Este desarrollo esta pensado para una tienda de víveres (puede ser tanto de bar
 - Henry Cogua
 - Julian Lancheros
 
-### Enlace de la pagina montada
-https://app-foodply.herokuapp.com/About
-
-### Tecnologias usadas
+### Tecnologias usadas en el proyecto
 [![Html](https://img.shields.io/badge/Html-orange?style=for-the-badge&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSS-1f63b6?style=for-the-badge&labelColor=101010)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952b3?style=for-the-badge&labelColor=101010)]()
@@ -27,8 +24,10 @@ https://app-foodply.herokuapp.com/About
 [![Gimp](https://img.shields.io/badge/Gimp-67604c?style=for-the-badge&labelColor=101010)]()
 </br>
 
-y algunas otras mas 
+y algunas otras más.... 
 
+### Enlace de la pagina montada
+https://app-foodply.herokuapp.com/About
 
 ### Vista previa de la pagina 
 
