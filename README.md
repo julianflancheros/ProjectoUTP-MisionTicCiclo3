@@ -15,3 +15,11 @@ Henry Cogua
 ### Equipo SCRUM
 - Henry Cogua
 - Julian Lancheros
+
+
+
+### Enlace de la pagina montada
+https://app-foodply.herokuapp.com/About
+
+
+
